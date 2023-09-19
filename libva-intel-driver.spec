@@ -7,13 +7,13 @@
 %global shortcommit0 %(c=%{commit0}; echo ${c:0:7})
 %global commitdate0 20221130
 
-Name:		libva-intel-driver
+Name:		libva-intel-driver-g45
 Version:	2.4.1
 Release:	13.%{commitdate0}git%{shortcommit0}%{?dist}
 Summary:	HW video decode support for Intel integrated graphics
 License:	MIT and EPL
 URL:		https://github.com/intel/intel-vaapi-driver
-Source0:	%{url}/archive/%{commit0}/intel-vaapi-driver-%{shortcommit0}.tar.gz
+Source0:	https://bitbucket.org/alium/g45-h264/downloads/intel-driver-g45-h264-2.4.1.tar.gz
 Source1:	intel-vaapi-driver.metainfo.xml
 Source9:	parse-intel-vaapi-driver.py
 Patch0: https://github.com/digetx/intel-vaapi-driver/commit/d03fd1f86a9aeee0b33447aee3578aadb3a93f8a.patch
