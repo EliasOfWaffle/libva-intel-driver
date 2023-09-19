@@ -53,7 +53,7 @@ https://01.org/intel-media-for-linux
 
 
 %prep
-%autosetup -p1 -n intel-vaapi-driver-%{commit0}
+%autosetup -p1 -n intel-driver-g45-h264-2.4.1
 %{?_with_gen4asm:
 #Move pre-built (binary) asm code
 for f in src/shaders/vme/*.g?b ; do
